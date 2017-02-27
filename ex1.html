@@ -1,0 +1,43 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>Calculator</title>
+
+
+</head>
+
+<body>
+       <h1> Simple Calculator Page </h1>
+
+       <table>
+               <tr>
+                         <td colspan="2"><input type="number" id="no1" name="no1" placeholder="Enter first number" /> </td>
+                       <td colspan="2"><input type="number" id="no2" name="no2" placeholder="Enter second number" /> </td>
+               </tr>
+               <tr> 
+                       <td colspan="4"><input type="number" id="result" /></td>
+               </tr>
+               <tr>
+                       <td><input type="button" id="add" value="+" onClick="doAdd()" /></td>
+                       <td><input type="button" id="sub" value="-" onClick="doSub()"/></td>
+                       <td><input type="button" id="multi" value="*" onClick="doMul()"/></td>
+                       <td><input type="button" id="div" value="/" onClick="doDiv()"/></td>
+               </tr>
+               <tr> <td colspan="4"><input type="button" id="calc" value="Squring or Cubing" onClick="doSqr()"/></td></tr>
+       </table>
+
+<script>
+
+function doAdd(){
+	var no1=parseInt(document.getElementById("no1").value);
+
+	var no2=parseInt(document.getElementById("no2").value);
+	document.getElementById("result").value = no1+no2;
+	return no1+no2;
+}
+
+
+
+</script>
+</body>
+</html>
